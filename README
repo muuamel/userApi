@@ -1,17 +1,8 @@
 <h1 align="center">UserApi</h1>
 <p align="center">With This Package Can You GET Info Username And Checking</p>
 
-### Features
-- **Easy** and **Fast**
-
-### Requirements
-- Python 3.9+
-- Fragment [NFT - AUCTION](https://fragment.com)
-- [telegram](https://telegram.org)
-
 ### Installation
-
-You can install `UserAPi` using pip:
+You can install UserAPi using pip:
 ```bash
 pip install userapi
 ```
@@ -38,7 +29,6 @@ print(info().fragment(user)) #To Get Status UserName in 'Fragment.com' , Result 
 print(info().fragment(user,proxy='123.123.123')) #To Get Status UserName in 'Fragment.com' With Proxis! , Result >>> Onauction - Sold - For Sell - ect...
 
 print(info().Nft()) #To Get Information UserName If is 'NFT' , Result >>> Json Data
-
 ```
 For examples, check the [examples](https://github.com/muamelameer/userapi/test.py).
 
