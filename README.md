@@ -1,4 +1,4 @@
-# UserApi [![Version](https://img.shields.io/pypi/v/UserApi?style=flat&logo=pypi)](https://pypi.org/project/UserAPi) [![UserApi version]
+# UserApi [![Version](https://img.shields.io/pypi/v/UserApi?style=flat&logo=pypi)](https://pypi.org/project/UserAPi) 
 ### UserApi
 ```
 This Semple Pkg For Telegram UserNames
@@ -59,5 +59,3 @@ For examples, check the [examples](https://github.com/muamelameer/userapi/test.p
 
 MIT [License](https://github.com/muamelameer/userapi/blob/main/LICENSE)
 
-
-#   zxcvbnmnbvcxz100$
