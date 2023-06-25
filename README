@@ -1,14 +1,14 @@
-<h1 align="center">LoveTikLib</h1>
-<p align="center">With This Package Can You Download Any TikTok Video from lovetik.com</p>
+<h1 align="center">UserApi</h1>
+<p align="center">With This Package Can You GET Info Username And Checking</p>
 
 ### Features
 - **Easy** and **Fast**
 
 ### Requirements
-
 - Python 3.9+
 - Fragment [NFT - AUCTION](https://fragment.com)
 - [telegram](https://telegram.org)
+
 ### Installation
 
 You can install `UserAPi` using pip:
