@@ -1,5 +1,6 @@
-# UserApilib [![Version](https://img.shields.io/pypi/v/UserApilib?style=flat&logo=pypi)](https://pypi.org/project/UserAPilib) 
-### UserApilib
+# UserApi Version 0.0.1
+
+### UserApi
 ```
 This Semple Pkg For Telegram UserNames
 Advantages :
@@ -17,10 +18,6 @@ Advantages :
 
 ### Installation
 
-You can install UserApiLib using pip:
-```bash
-pip install userapilib
-```
 To install the development version from Github, use the following command:
 ```bash
 pip install git+https://github.com/muamelameer/userapi/userapilib.git
