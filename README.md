@@ -37,7 +37,7 @@ print(info().fragment(user)) #To Get Status UserName in 'Fragment.com' , Result 
 
 print(info().fragment(user,proxy='123.123.123')) #To Get Status UserName in 'Fragment.com' With Proxis! , Result >>> Onauction - Sold - For Sell - ect...
 
-print(info().Nft()) #To Get Information UserName If is 'NFT' , Result >>> Json Data
+print(info().Nft(user)) #To Get Information UserName If is 'NFT' , Result >>> Json Data
 ```
 For examples, check the [examples](https://github.com/muamelameer/userapi/test.py).
 
