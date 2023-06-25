@@ -15,6 +15,7 @@ class check():
             elif self.a == False:
                 raise Exception("The MYUAMel")
         except requests.exceptions.ConnectionError:return 'Connection Error!'
+   
     def Nft(self,user):
         """
         check if telgram username is NFT or not
@@ -29,6 +30,7 @@ class check():
             if self.a.ok == True:return True
             elif self.a.ok == False: return False
         except requests.exceptions.ConnectionError:raise Exception('Connection Error!')
+
     def Fragment(self,user, proxy=''): 
         """
         to checking username is on fragment.com or not
@@ -74,6 +76,7 @@ class check():
             except requests.exceptions.ConnectionError: raise BadProxy(proxy)
             except requests.exceptions.ConnectTimeout: raise Exception('Timeout!')
             except requests.exceptions.SSLError: raise Exception('SSL Error!')
+ 
     def Telegram(self,user, proxy=''):
 
         """
@@ -117,6 +120,7 @@ class info:
         except requests.exceptions.ConnectTimeout: return 'Timeout!'
         except requests.exceptions.ConnectionError:return 'Connection Error!'
         except:return {'msg':'Error','ok': 'False'}
+    
     def auction(self,user): #get information user on auction like: price, time end, how the bid and bid history
         """
         THis Func For Get Information Any UserName On Auction in Fragment.com .
@@ -191,6 +195,7 @@ class info:
         except requests.exceptions.URLRequired: return 'A valid URL is required to make a request!'
         except AttributeError:return 'Try again!'
 
+    
     def fragment(self,user, proxy=''): 
         """
         Check If UserName In Fragment.com or not with status like: is sold or on auction, act...
@@ -235,10 +240,13 @@ class info:
 
 class TelegramAcc:
     def login():pass
+    
     def send(self,hash,Id,Message):
         return 'soon on v0.2'
+    
     def SetUserName(self,hash,username):
         return 'soon on v0.2'
+
 class TelegramBot:
     """
     Any Method From https://core.telegram.org/bots/api .
