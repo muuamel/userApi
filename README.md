@@ -1,5 +1,14 @@
-<h1 align="center">UserApi</h1>
-<p align="center">With This Package Can You GET Info Username And Checking</p>
+# UserApi [![Version](https://img.shields.io/pypi/v/UserApi?style=flat&logo=pypi)](https://pypi.org/project/UserAPi) [![UserApi version] [![Downloads](https://static.pepy.tech/personalized-badge/UserApi?period=month&units=none&left_color=grey&right_color=brightgreen&left_text=Downloads)](https://pepy.tech/project/UserApi)
+### UserApi
+```
+This Semple Pkg For Telegram UserNames
+Advantages :
+    Check-UserName . Get-Info-UserName 
+```
+### Requirements
+- Python 3.9+
+- Fragment [NFT - AUCTION](https://fragment.com)
+- [telegram](https://telegram.org)
 
 ### Installation
 You can install UserAPi using pip:
@@ -38,3 +47,6 @@ For examples, check the [examples](https://github.com/muamelameer/userapi/test.p
 ### Follow me on social media accounts
 - [@MuamelAmeer](https://github.com/muamelameer)
 - [telegram](https://t.me/forkcode)
+# License
+
+MIT [License](https://github.com/muamelameer/userapi/blob/main/LICENSE)
