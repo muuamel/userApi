@@ -58,4 +58,3 @@ For examples, check the [examples](https://github.com/muamelameer/userapi/test.p
 # License
 
 MIT [License](https://github.com/muamelameer/userapi/blob/main/LICENSE)
-
