@@ -45,8 +45,8 @@ For examples, check the [examples](https://github.com/muamelameer/userapi/test.p
 - You for viewing or using this project.
 
 ### Follow me on social media accounts
-- [@MuamelAmeer](https://github.com/muamelameer)
-- [telegram](https://t.me/forkcode)
+- [@MuamelAmeer](https://github.com/muamelameer) GitHub
+- [telegram](https://t.me/forkcode) Channel Projects
 # License
 
 MIT [License](https://github.com/muamelameer/userapi/blob/main/LICENSE)
