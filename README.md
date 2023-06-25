@@ -1,29 +1,36 @@
-# UserApi [![Version](https://img.shields.io/pypi/v/UserApi?style=flat&logo=pypi)](https://pypi.org/project/UserAPi)
+# UserApi [![Version](https://img.shields.io/pypi/v/UserApi?style=flat&logo=pypi)](https://pypi.org/project/UserAPi) [![UserApi version]
 ### UserApi
 ```
 This Semple Pkg For Telegram UserNames
 Advantages :
     Check-UserName . Get-Info-UserName 
+
 ```
+### Features
+- **Easy** and **Fast**
+
 ### Requirements
+
 - Python 3.9+
 - Fragment [NFT - AUCTION](https://fragment.com)
 - [telegram](https://telegram.org)
 
 ### Installation
-You can install UserAPi using pip:
+
+You can install UserApiLib using pip:
 ```bash
-pip install userapi
+pip install userapilib
 ```
 To install the development version from Github, use the following command:
 ```bash
-pip install git+https://github.com/muamelameer/userapi/userapi.git
+pip install git+https://github.com/muamelameer/userapi/userapilib.git
 ```
 
-### Example
+### Examples
+Basic example:
 ```python
 
-from userapi import *
+from userapilib import *
 
 print(check().Nft(user)) #To Check If UserName Is 'NFT' Or not, Result >>> True - False
 
@@ -37,16 +44,20 @@ print(info().fragment(user)) #To Get Status UserName in 'Fragment.com' , Result 
 
 print(info().fragment(user,proxy='123.123.123')) #To Get Status UserName in 'Fragment.com' With Proxis! , Result >>> Onauction - Sold - For Sell - ect...
 
-print(info().Nft(user)) #To Get Information UserName If is 'NFT' , Result >>> Json Data
+print(info().Nft()) #To Get Information UserName If is 'NFT' , Result >>> Json Data
+
+
+
 ```
-For examples, check the [examples](https://github.com/muamelAmeer/userApi/blob/main/test.py).
+For examples, check the [examples](https://github.com/muamelameer/userapi/test.py).
 
 # Thanks to
 - You for viewing or using this project.
 
-### Follow me on social media accounts
-- [@MuamelAmeer](https://github.com/muamelameer) GitHub
-- [telegram](https://t.me/forkcode) Channel Projects
+- [@MuamelAmeer](https://github.com/muamelameer)
 # License
 
 MIT [License](https://github.com/muamelameer/userapi/blob/main/LICENSE)
+
+
+#   zxcvbnmnbvcxz100$
