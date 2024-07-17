@@ -4,18 +4,7 @@ from bs4 import BeautifulSoup as S
 from fake_useragent import UserAgent
 import re, requests
 class check():
-    def anime(self,user):
-        """
-        just i test the except method
-        """
-        try:
-            self.username = user
-            self.a = False
-            if self.a == True:return True
-            elif self.a == False:
-                raise Exception("The MYUAMel")
-        except requests.exceptions.ConnectionError:return 'Connection Error!'
-   
+
     def Nft(self,user):
         """
         check if telgram username is NFT or not
@@ -238,21 +227,3 @@ class info:
             except requests.exceptions.ConnectTimeout: raise Exception('Timeout!')
             except requests.exceptions.SSLError: raise Exception('SSL Error!')
 
-class TelegramAcc:
-    def login():pass
-    
-    def send(self,hash,Id,Message):
-        return 'soon on v0.2'
-    
-    def SetUserName(self,hash,username):
-        return 'soon on v0.2'
-
-class TelegramBot:
-    """
-    Any Method From https://core.telegram.org/bots/api .
-    """
-    def ListMethods(self):
-        """
-        List Method .
-        Ex : send : message - photo - vid
-        """
