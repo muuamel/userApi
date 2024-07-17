@@ -1,49 +1,23 @@
-# UserApi Version 0.0.1
+<p align="center">
+    <br>
+    <b>The Fragment API Integration library provides Python developers with tools to interact seamlessly with the Fragment platform.</b>
+    </br>
+    <a href="https://t.me/D_DDDD">
+        Channel
+    </a>
+</p>
 
-### UserApi
-```
-This Semple Pkg For Telegram UserNames
-Advantages :
-    Check-UserName . Get-Info-UserName 
+## Features
+- Smart integration with Fragment API.
+- Username availability verification.
+- Detailed auction information retrieval.
 
-```
-### Features
-- **Easy** and **Fast**
+## Requirements
+- Python 3.8 or higher.
+- A [cloudscraper library](https://github.com/venomous/cloudscraper).
 
-### Requirements
-
-- Python 3.9+
-- Fragment [NFT - AUCTION](https://fragment.com)
-- [telegram](https://telegram.org)
-
-### Installation
-
-To install the development version from Github, use the following command:
-```bash
-pip install git+https://github.com/mooamel/userapi/userapilib.git
-```
-
-### Examples
-Basic example:
-```python
-
-from userapilib import *
-
-print(check().Nft(user)) #To Check If UserName Is 'NFT' Or not, Result >>> True - False
-
-print(check().Fragment(user)) #To Check If UserName Is 'Fragment.com' Or not, Result >>> True - False
-
-print(check().Fragment(user,proxy='123.123.123')) #Check If UserName Is 'Fragment.com' Or not 'With Proxis!', Result >>> True - False
-
-print(info().auction(user))  #To Get Information UserName If in 'Fragment.com' , Result >>> Json Data
-
-print(info().fragment(user)) #To Get Status UserName in 'Fragment.com' , Result >>> Onauction - Sold - For Sell - ect...
-
-print(info().fragment(user,proxy='123.123.123')) #To Get Status UserName in 'Fragment.com' With Proxis! , Result >>> Onauction - Sold - For Sell - ect...
-
-print(info().Nft(user)) #To Get Information UserName If is 'NFT' , Result >>> Json Data
-
-
+``` bash
+# With Git
+pip install git+https://github.com/muamel/userapi -U
 
 ```
-
