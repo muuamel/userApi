@@ -33,4 +33,3 @@ pip install git+https://github.com/muamel/userapi -U
 pip install git+https://github.com/muamel/userapi -U
 
 ```
->>>>>>> 1e70694718ad672ec223d40915e7e467c8d06fd8
