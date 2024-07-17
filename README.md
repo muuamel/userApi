@@ -11,7 +11,6 @@
 - Smart integration with Fragment API.
 - Username availability verification.
 - Detailed auction information retrieval.
-<<<<<<< HEAD
 
 ## Requirements
 - Python 3.8 or higher.
