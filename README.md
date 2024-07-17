@@ -46,13 +46,4 @@ print(info().Nft(user)) #To Get Information UserName If is 'NFT' , Result >>> Js
 
 
 ```
-For examples, check the [examples](https://github.com/mooamel/userapi/test.py).
 
-# Thanks to
-- You for viewing or using this project.
-
-- [@MuamelAmeer](https://github.com/mooamel)
-- [@D_DDDD](https://t.me/D_DDDD)
-# License
-
-MIT [License](https://github.com/mooamel/userapi/blob/main/LICENSE)
