@@ -21,14 +21,3 @@
 pip install git+https://github.com/muamel/userapi -U
 
 ```
-=======
-
-## Requirements
-- Python 3.8 or higher.
-- A [cloudscraper library](https://github.com/venomous/cloudscraper).
-
-``` bash
-# With Git
-pip install git+https://github.com/muamel/userapi -U
-
-```
