@@ -21,3 +21,5 @@
 pip install git+https://github.com/muamel/userapi -U
 
 ```
+
+## Please ⭐ on github
