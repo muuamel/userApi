@@ -81,52 +81,52 @@ class Fragment():
 
 ### - 
 
-def auction(self, username) -> info or ok:
-    """
-    Retrieves auction details for a username on the Fragment.
+    def auction(self, username) -> info or ok:
+        """
+        Retrieves auction details for a username on the Fragment.
 
-    Args:
-    - username (str): The username to check.
+        Args:
+        - username (str): The username to check.
 
-    Returns:
-    - info or ok: Depending on the auction status:
-      - If username is in auction: Returns `info` with auction details.
-      - If username is not in auction: Returns `ok` with status=False.
+        Returns:
+        - info or ok: Depending on the auction status:
+        - If username is in auction: Returns `info` with auction details.
+        - If username is not in auction: Returns `ok` with status=False.
 
-    Raises:
-    - Exception: If an unknown error occurs during the process.
-    """
-    try:
-        soup = S(self.sender.get(self.f_api(username)).content, 'html.parser')
-        if soup.title.text.strip() != 'Just a moment...':
-            mete = soup.find("meta", property="og:description").get("content")
-            if "An auction to get the Telegram" in mete:
-                spen = soup.find_all("span")
-                a = re.findall('data-val="(.*?)">', str(spen[17]))
-                b = re.findall('data-val="(.*?)">', str(spen[18]))
-                c = re.findall('data-val="(.*?)">', str(spen[19]))
-                return info(
-                    status=True,
-                    username=soup.find("span", attrs={'class': 'subdomain'}).string,
-                    domain=soup.find("span", attrs={'class': 'domain'}).string,
-                    highest_bid=soup.findAll('div', attrs={'class': 'table-cell-value tm-value icon-before icon-ton'})[0].string,
-                    bid_step=soup.findAll('div', attrs={'class': 'table-cell-value tm-value icon-before icon-ton'})[1].string,
-                    minimum_bid=soup.findAll('div', attrs={'class': 'table-cell-value tm-value icon-before icon-ton'})[2].string,
-                    days=re.findall(r'data-val="(.*?)"', str(soup.find_all("span")[16]))[0],
-                    hours=f"{a[0]}{a[1]}",
-                    minutes=f"{b[0]}{b[1]}",
-                    seconds=f"{c[0]}{c[1]}",
-                    bid_history={
-                        'binArray': [item.string for item in soup.findAll('div', attrs={'class': 'table-cell-value tm-value icon-before icon-ton'})[3:]],
-                        'historyArray': [item.string for item in soup.findAll('time', attrs={'class': 'short'})],
-                        'urlArray': [re.findall("href=\"(.*?)\"", str(item))[0] for item in soup.findAll('a', attrs={'class': 'tm-wallet'})],
-                        'hashArray': [re.findall("href=\"(.*?)\"", str(item))[0].replace('https://tonviewer.com/', '') for item in soup.findAll('a', attrs={'class': 'tm-wallet'})]
-                    },
-                    note='434: Username In Auction.'
-                )
+        Raises:
+        - Exception: If an unknown error occurs during the process.
+        """
+        try:
+            soup = S(self.sender.get(self.f_api(username)).content, 'html.parser')
+            if soup.title.text.strip() != 'Just a moment...':
+                mete = soup.find("meta", property="og:description").get("content")
+                if "An auction to get the Telegram" in mete:
+                    spen = soup.find_all("span")
+                    a = re.findall('data-val="(.*?)">', str(spen[17]))
+                    b = re.findall('data-val="(.*?)">', str(spen[18]))
+                    c = re.findall('data-val="(.*?)">', str(spen[19]))
+                    return info(
+                        status=True,
+                        username=soup.find("span", attrs={'class': 'subdomain'}).string,
+                        domain=soup.find("span", attrs={'class': 'domain'}).string,
+                        highest_bid=soup.findAll('div', attrs={'class': 'table-cell-value tm-value icon-before icon-ton'})[0].string,
+                        bid_step=soup.findAll('div', attrs={'class': 'table-cell-value tm-value icon-before icon-ton'})[1].string,
+                        minimum_bid=soup.findAll('div', attrs={'class': 'table-cell-value tm-value icon-before icon-ton'})[2].string,
+                        days=re.findall(r'data-val="(.*?)"', str(soup.find_all("span")[16]))[0],
+                        hours=f"{a[0]}{a[1]}",
+                        minutes=f"{b[0]}{b[1]}",
+                        seconds=f"{c[0]}{c[1]}",
+                        bid_history={
+                            'binArray': [item.string for item in soup.findAll('div', attrs={'class': 'table-cell-value tm-value icon-before icon-ton'})[3:]],
+                            'historyArray': [item.string for item in soup.findAll('time', attrs={'class': 'short'})],
+                            'urlArray': [re.findall("href=\"(.*?)\"", str(item))[0] for item in soup.findAll('a', attrs={'class': 'tm-wallet'})],
+                            'hashArray': [re.findall("href=\"(.*?)\"", str(item))[0].replace('https://tonviewer.com/', '') for item in soup.findAll('a', attrs={'class': 'tm-wallet'})]
+                        },
+                        note='434: Username In Auction.'
+                    )
+                else:
+                    return ok(status=False, username=username, note='443: Username not in auction.')
             else:
-                return ok(status=False, username=username, note='443: Username not in auction.')
-        else:
-            return ok(status=False, username=username, note="33: Please try again later <3, We got blocked from fragment.com.")
-    except Exception as e:
-        raise Exception(f'An unknown error occurred: {e}')
+                return ok(status=False, username=username, note="33: Please try again later <3, We got blocked from fragment.com.")
+        except Exception as e:
+            raise Exception(f'An unknown error occurred: {e}')
